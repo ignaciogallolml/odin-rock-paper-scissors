@@ -1,0 +1,72 @@
+body {
+    background:#0f0f0f;
+    color:#fff;
+    font-family: "Karla", serif;
+}
+
+.app-container {
+    display:grid;
+    grid-column: 2;
+    width:30%;
+    margin:auto;
+    border:1px solid #fff;
+    align-content: center;
+}
+
+.app-grogu-bg {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+
+    span {
+        font-family:'Source Code Pro';
+        background-color: #f4f4f4;
+        margin:1rem;
+        color:#212121;
+        padding:1em;
+        font-size:1.5em;
+        font-weight:bold;
+    }
+
+    img {
+        text-align:center;
+    }
+}
+
+/*GAME INPUTS*/
+
+.game-inputs {
+
+    display:flex;
+    justify-content: center;
+    gap:1em;
+    margin-block:2em;
+
+    .game-picks {
+        padding:1em;
+        border:1px solid #fff;
+    }
+
+    img {
+        opacity: 0.2;
+        transition: all .3s ease-in-out;
+    }
+
+    img:hover {
+        opacity:1;
+    }
+
+}
+
+/*ScoreBoard*/
+
+.score-board {
+    display:flex;
+    justify-content: space-around;
+    border:1px solid #fff;
+}
+
+#user-wins, #computer-wins {
+    font-size:1em;
+    font-weight:900;
+}
